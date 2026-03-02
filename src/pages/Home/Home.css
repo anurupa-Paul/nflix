@@ -1,0 +1,66 @@
+.hero{
+    position: relative;
+}
+.banner_image{
+    width: 100%;
+    mask-image: linear-gradient(to right,transparent,black 75%);
+    -webkit-mask-image: linear-gradient(to right,transparent,black 75%);
+}
+.title{
+    position: absolute;
+    width: 100%;
+    padding-left: 6%;
+    bottom: 0
+}
+.banner_title{
+    width: 35%;
+    max-width: 420px;
+    margin-bottom: 30px;
+}
+.title p{
+    max-width: 700px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.buttons .btn img{
+    width: 25px;
+}
+.buttons .btn{
+    border: 0;
+    outline: 0;
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.buttons .btn .dark-btn{
+    color: #fff;
+    background-color: #6d6d6eb3;
+}
+.buttons .btn:hover{
+    background-color: #ffffffe0;
+}
+.buttons .btn .dark-btn:hover{
+    background-color: #6d6d6eb3;
+}
+.more_cards{
+    padding-left: 6%;
+}
+@media (max-width: 1024px){
+    .title .more_cards{
+        display: none;
+    }
+    .buttons{
+        margin-bottom: 30px;
+    }
+}
